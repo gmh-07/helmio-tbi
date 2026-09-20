@@ -29,7 +29,7 @@ export const IMG = {
     CONV + 'file-8c3hf0oem800.png',   // Fog Disinfection
     CONV + 'file-8c3hf0oemebk.png',   // Engineered Airflow
     CONV + 'file-8c3hf0oemkn4.png',   // Thermal Drying
-    '',                               // Freshness Spray (add your own image URL here)
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKPFBgjHz-4eSZlh_gnsm2mkbtKJjvAL7EjHnunDFEw&s=10',   // Freshness Spray
   ],
   places: {
     fuel: SITE_IMG + 'abb6f549-6f8b-432e-853c-6a637bbf9fb8.jpg',

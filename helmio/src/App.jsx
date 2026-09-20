@@ -106,31 +106,29 @@ const faqs = [
   ['How long does it take?', 'A complete cycle takes about 4 minutes.'],
   ['What happens during a cycle?', 'Your helmet goes through UV sterilization, fog disinfection, engineered airflow, thermal drying, and a final freshness spray.'],
   ['Can it be used daily?', 'Yes. The process is gentle enough for regular use, so you can sanitize your helmet as often as you ride.'],
-  ['What helmets are supported?', 'Sharun Helmet Cleaner is designed for standard motorcycle helmets, including full-face and open-face styles.'],
+  ['What helmets are supported?', 'Sharun Helmet Care is designed for standard motorcycle helmets, including full-face and open-face styles.'],
 ]
 
 /* ---------- sections ---------- */
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <Pic src={IMG.hero} alt="Sharun Helmet Cleaner - Premium helmet sanitizing lifestyle" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/10 to-white/40" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-sky-900">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-sky-500/20 blur-3xl" />
+        <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-cyan-400/10 blur-3xl" />
       </div>
       <div className="container mx-auto max-w-6xl relative z-10 px-4">
         <div className="text-center space-y-8">
-          <motion.div className="mt-[120px]" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <h1 className={`font-black tracking-tight ${APPLE} relative inline-block leading-none`}>
-              <span className="relative block text-6xl xl:text-9xl">
-                <span className="absolute inset-0 blur-2xl opacity-40 text-teal">SHARUN</span>
-                <span className="relative text-slate-900">SHARUN</span>
-              </span>
-              <span className="block mt-3 text-2xl xl:text-5xl tracking-[0.25em] text-teal">HELMET CLEANER</span>
-            </h1>
+          <motion.div className="mt-[100px] flex justify-center" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+            <img
+              src={IMG.hero}
+              alt="Sharun Helmet Care"
+              className="w-64 xl:w-[420px] max-w-full h-auto rounded-2xl bg-white p-4 shadow-2xl shadow-sky-500/30"
+            />
           </motion.div>
           <motion.div className="space-y-2" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
-            <p className={`xl:text-4xl text-[20px] font-medium ${APPLE} text-slate-800`}>Helmet care made simple</p>
-            <p className={`xl:text-2xl text-base ${APPLE} text-slate-700`}>Your helmet deserves a fresh start.</p>
+            <p className={`xl:text-4xl text-[20px] font-medium ${APPLE} text-white/95 drop-shadow-lg`}>Helmet care made simple</p>
+            <p className={`xl:text-2xl text-base ${APPLE} text-white/80 drop-shadow-lg`}>Your helmet deserves a fresh start.</p>
           </motion.div>
           <motion.div className="flex flex-col xl:flex-row gap-4 justify-center items-center pt-8" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }}>
             <button onClick={goContact} className="inline-flex items-center justify-center rounded-md bg-teal hover:bg-teal-dark text-white px-8 py-6 text-lg font-inter shadow-2xl shadow-teal/30 hover:shadow-teal/50 transition-all duration-300">
@@ -140,8 +138,8 @@ function Hero() {
         </div>
       </div>
       <motion.div className="absolute bottom-8 left-1/2 -translate-x-1/2" animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }}>
-        <div className="w-6 h-10 border-2 border-slate-600/60 rounded-full flex items-start justify-center p-2">
-          <motion.div className="w-1.5 h-1.5 bg-slate-700 rounded-full" animate={{ y: [0, 12, 0] }} transition={{ duration: 2, repeat: Infinity }} />
+        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+          <motion.div className="w-1.5 h-1.5 bg-white rounded-full" animate={{ y: [0, 12, 0] }} transition={{ duration: 2, repeat: Infinity }} />
         </div>
       </motion.div>
     </section>
@@ -190,7 +188,7 @@ function HowItWorks() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/20 to-transparent pointer-events-none" />
       <div className="container mx-auto max-w-7xl px-4 relative z-10">
         <Reveal className="text-center space-y-3 mb-10 xl:space-y-6 xl:mb-20">
-          <h2 className={`text-3xl xl:text-7xl font-bold ${APPLE}`}>How Sharun Helmet Cleaner Works?</h2>
+          <h2 className={`text-3xl xl:text-7xl font-bold ${APPLE}`}>How Sharun Helmet Care Works?</h2>
           <p className={`text-base xl:text-2xl text-white/80 ${APPLE}`}>A 5-step engineered process for complete sanitization</p>
         </Reveal>
 
@@ -242,15 +240,15 @@ function Machine() {
     <section className="py-16 xl:py-24 bg-subtle-gradient">
       <div className="container mx-auto max-w-6xl px-4">
         <Reveal className="text-center space-y-4 mb-10 xl:mb-14">
-          <h2 className="text-4xl xl:text-6xl font-bold font-league-spartan">Meet Sharun Helmet Cleaner</h2>
+          <h2 className="text-4xl xl:text-6xl font-bold font-league-spartan">Meet Sharun Helmet Care</h2>
           <p className="text-xl text-muted-foreground font-inter">Built to give every helmet a fresh start.</p>
         </Reveal>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 xl:gap-10 max-w-3xl mx-auto">
           {IMG.machine.map((src, i) => (
             <Reveal key={i} delay={i * 0.15}>
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-border bg-white hover-lift">
-                <Pic src={src} alt={`Sharun Helmet Cleaner machine ${i + 1}`} className="w-full h-[300px] xl:h-[480px] object-cover" />
+                <Pic src={src} alt={`Sharun Helmet Care machine ${i + 1}`} className="w-full h-auto block" />
               </div>
             </Reveal>
           ))}
@@ -310,7 +308,7 @@ function Business() {
             <Reveal className="text-center space-y-4">
               <h2 className="text-4xl xl:text-6xl font-bold font-league-spartan">Business Opportunity</h2>
               <p className="text-xl text-muted-foreground font-inter max-w-3xl mx-auto">
-                Join the future of helmet hygiene. Install a Sharun Helmet Cleaner pod and create a new revenue stream.
+                Join the future of helmet hygiene. Install a Sharun Helmet Care pod and create a new revenue stream.
               </p>
             </Reveal>
 
@@ -358,7 +356,7 @@ function Business() {
       <section className="py-16 xl:py-20 bg-gradient-to-br from-teal/10 via-background to-teal/5">
         <div className="container mx-auto max-w-4xl px-4">
           <Reveal className="text-center space-y-8">
-            <h2 className="text-3xl xl:text-5xl font-bold font-league-spartan">Thinking of using Sharun Helmet Cleaner?</h2>
+            <h2 className="text-3xl xl:text-5xl font-bold font-league-spartan">Thinking of using Sharun Helmet Care?</h2>
             <button onClick={goContact} className="inline-flex items-center justify-center rounded-md bg-teal hover:bg-teal-dark text-white px-10 py-7 text-lg xl:text-xl font-inter shadow-2xl shadow-teal/30 hover:shadow-teal/50 transition-all duration-300">
               Let's Talk<Arrow />
             </button>
@@ -381,7 +379,7 @@ function Calculator() {
       <div className="container mx-auto max-w-4xl px-4">
         <Reveal className="text-center space-y-8 mb-12">
           <h2 className="text-4xl xl:text-6xl font-bold font-league-spartan">Calculate Your Revenue</h2>
-          <p className="text-xl text-muted-foreground font-inter">See how much you can earn with a Sharun Helmet Cleaner pod at your location</p>
+          <p className="text-xl text-muted-foreground font-inter">See how much you can earn with a Sharun Helmet Care pod at your location</p>
         </Reveal>
         <Reveal>
           <div className="rounded-xl py-6 border-2 border-teal bg-gradient-to-br from-[#0b4f7a] to-[#083a5c] shadow-2xl">
@@ -519,9 +517,9 @@ function Footer() {
   return (
     <footer className="py-12 bg-black text-white/60">
       <div className="container mx-auto max-w-6xl px-4 text-center space-y-4">
-        <p className="text-2xl font-bold font-league-spartan text-white">SHARUN HELMET CLEANER</p>
+        <p className="text-2xl font-bold font-league-spartan text-white">SHARUN HELMET CARE</p>
         <p className="font-inter">Clean Helmet. Safer Ride.</p>
-        <p className="text-sm font-inter">© {new Date().getFullYear()} Sharun Helmet Cleaner. All rights reserved.</p>
+        <p className="text-sm font-inter">© {new Date().getFullYear()} Sharun Helmet Care. All rights reserved.</p>
       </div>
     </footer>
   )
