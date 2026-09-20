@@ -8,7 +8,7 @@ export default {
         card: '#f4f7f8',
         border: '#e2e8f0',
         'muted-foreground': '#64748b',
-        teal: { DEFAULT: '#0f9d9d', dark: '#0b7a7a' },
+        teal: { DEFAULT: '#0284c7', dark: '#0369a1' },
       },
       fontFamily: {
         'league-spartan': ['"League Spartan"', 'sans-serif'],
